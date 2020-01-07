@@ -60,7 +60,8 @@ ul {
 }
 
 .site-navigation__list {
-	display: flex;
+    display: flex;
+    align-items: center;
 }
 
 .site-navigation__item {
@@ -404,6 +405,7 @@ ul {
     .site-navigation__item{
         margin-right: 5px;
         padding: 5px 1px;
+        font-size: .85rem;
     }
 
     h1,h2{
