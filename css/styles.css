@@ -466,9 +466,10 @@ ul {
     }
 
     .card{
-        width: 85%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        padding: 1rem;
     }
 
     .site__logo--footer{
