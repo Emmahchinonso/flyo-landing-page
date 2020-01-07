@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap");
+
+:root {
+	--color-1: hsl(243, 87%, 12%);
+	--color-2: hsl(238, 22%, 44%);
+	--color-3: hsl(224, 93%, 58%);
+	--color-4: hsl(170, 45%, 43%);
+	--color-5: hsl(240, 75%, 98%);
+	--color-6: hsl(0, 0%, 75%);
+	--font-weight: 700;
+	--font-family: "Raleway", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: var(--color-1);
+    font-size: 14px;
+}
+
+.col-1, .col-2{
+    flex: 1 1 50%;
+}
+
+h1,
+h2 {
+	font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    font-size: 2rem;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+.main-header {
+	display: flex;
+	font-family: var(--font-family);
+	justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.site__logo {
+	display: block;
+	width: 7rem;
+}
+
+.site-navigation__list {
+	display: flex;
+}
+
+.site-navigation__item {
+	margin-left: 10px;
+    font-size: 1rem;
+    color: var(--color-1);
+    transition: .4s ease;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.site-navigation__item:hover{
+    color: var(--color-3);
+}
+
+/* Container */
+.container {
+	width: 100%;
+	display: flex;
+	padding: 0 3rem;;
+	align-items: center;
+}
+/* Container */
+
+
+/*----- Section-1 -----*/
+.section-1{
+    margin-bottom: 10rem;
+}
+
+.section-1__heading {
+	padding-bottom: 1rem;
+	line-height: 1.5;
+	font-size: 2rem;
+}
+
+.section-1__text {
+	padding-bottom: 1.3rem;
+    padding-right: 10rem;
+    color: var(--color-2);
+    line-height: 1.5rem;
+}
+
+.form {
+	padding-right: 10rem;
+}
+
+.email {
+	width: 55%;
+	margin-right: 5px;
+	padding: 0.7rem 1rem;
+    border: 0;
+    border: 1px solid var(--color-2);
+}
+
+.btn {
+	padding: 0.7rem 2rem;
+	background: var(--color-3);
+	color: var(--color-5);
+	font-family: var(--font-family);
+	border: 0;
+	border: 1px solid var(--color-3);
+    box-shadow: none;
+    transition: .4s ease;
+}
+
+.btn:hover{
+    background: var(--color-4);
+    border-color: var(--color-4);
+}
+/*----- Section-1 -----*/
+
+
+/* ---- Section-2 ----- */
+.section-2{
+    background: url('../images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-2__heading{
+    margin-bottom: 1.5rem;
+}
+
+.section-2__text{
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    padding-right: 9rem;
+    font-size: 14px;
+}
+
+.section-2__link{
+    text-decoration: none;
+    color: var(--color-4);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-2__link::after{
+    content: '';
+    position: absolute;
+    background: url('../images/icon-arrow.svg');
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-2__link::before{
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    bottom: 0;
+    width: 120%;
+    background: var(--color-4);
+}
+
+.container-2{
+    padding-top : 10rem;
+    padding-bottom: 7rem;
+}
+
+.quotes{
+    width: 1rem;
+    margin: 5px 0;
+}
+
+.card{
+    width: 23rem;
+    background: #fff;
+    margin-top: 3.5rem;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,.2);
+}
+
+.card__text{
+    line-height: 1.9;
+}
+
+.media{
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.media__image{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.media__text{
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
+.dark-text{
+    font-weight: 900;
+    font-size: .8rem;
+}
+/*----- Section-2 ------*/
+
+.section-3{
+    background: var(--color-2);
+    color: #fff;
+}
+
+.section-3__heading{
+    margin-bottom: 1rem;
+}
+
+.section-3__col-1{
+    padding-right: 9rem;
+    flex-basis: 50%;
+    line-height: 1.8;
+}
+
+.section-3__email{
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.section-3__col-2{
+    padding-left: 10rem;
+}
+
+.section-3__container{
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+}
+
+.btn--section-3:hover{
+    background: var(--color-4);
+}
+/*----- Section-3 -----*/
+
+.footer{
+    background: var(--color-1);
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.site__logo--footer{
+    margin-left: 2.5rem;
+}
+
+.container--footer{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.phone, .email-footer{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 2.5rem;
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.phone::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background: url('../images/icon-phone.svg');
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.email-footer::before{
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url('../images/icon-email.svg');
+    background-repeat: no-repeat;
+    left: 5px;
+    margin-top: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-list{
+    line-height: 2rem;
+}
+
+.footer-icons{
+    display: flex;
+}
+
+.container--footer{
+    padding-right: 20rem;
+    flex-wrap: wrap;
+}
+
+.fab{
+    color: #fff;
+    font-size: 1rem;
+    padding: .8rem;
+    border: 1px solid var(--color-6);
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.footer-icons li:not(:first-child){
+    margin-left: 10px;
+}
+
+.fab:hover{
+    color: var(--color-1);
+    background: #fff; 
+}
+
+
+
+.inner {
+	padding: 3rem 3rem 3rem 0;
+}
+
+.site__logo--footer {
+	width: 12rem;
+    height: auto;
+	background-color: #fff;
+	-webkit-mask: url("../images/logo.svg") no-repeat center;
+	mask: url("../images/logo.svg") no-repeat center;
+}
+
+/*----- Media queries ------*/
+@media(max-width: 1003px){
+    .container--footer{
+        padding-right: 5rem;
+    }
+
+    .section-3__col-1{
+        padding-right: 3rem;
+    }
+
+    .section-3__col-2{
+        padding-left: 3rem;
+    }
+
+    .section-1__text{
+        padding-right: 2rem;
+    }
+
+    .form{
+        padding-right: 2rem;
+    }
+
+    .input-control{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+        padding: 0 0 0 1.5rem;
+    }
+
+    .site__logo{
+        width: 5rem;
+    }
+
+    .main-header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .site-navigation__item{
+        margin-right: 5px;
+        padding: 5px 1px;
+    }
+
+    h1,h2{
+        font-size: 1.3rem;
+    }
+
+    .form{
+        padding-right: 0;
+    }
+
+    .section-1 .container{
+        padding: 3rem 1.5rem;
+    }
+
+    .section-1 .col-2{
+        order: -1;
+    }
+
+    .section-1__heading{
+        padding-top: 1.5rem;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .section-1__text{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .section-1{
+        margin-bottom: 2rem;
+    }
+
+    .section-2{
+        background: url('../images/bg-curve-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .section-2__text{
+        padding-right: 1rem;
+    }
+
+    .section-2__link{
+       left: 20%;
+    }
+
+    .container-2{
+        padding: 3rem 1rem 3rem 1.5rem;
+    }
+
+    .container-2 .col-2{
+        order: -1;
+    }
+
+    .container-2 .col-1{
+        margin-top: 5rem;
+    }
+
+    .card{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .site__logo--footer{
+        margin-left: .7rem;
+    }
+
+    .section-3__container{
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .section-3__email, .btn--section-3{
+        width: 100%;
+    }
+
+    .section-3__col-1{
+        padding-right: 0;
+    }
+
+    .section-3__col-2{
+        padding: 1rem 0;
+    }
+
+    .container--footer ul:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-icons{
+        width: 100%;
+        padding-top: 1rem;
+        justify-content: center;
+    }
+}
