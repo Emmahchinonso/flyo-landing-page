@@ -404,6 +404,7 @@ ul {
     .site-navigation__item{
         margin-right: 5px;
         padding: 5px 1px;
+        font-size: .85rem;
     }
 
     h1,h2{
